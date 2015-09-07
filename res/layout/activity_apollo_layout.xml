@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp"
+        android:text="上门服务"
+        android:textColor="@color/txt_deep"
+        android:textSize="18sp" />
+	<View android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/txt_little"/>
+
+        <com.scxh.meituan.apollo.MyViewPagerSingleLine
+            android:id="@+id/apollo_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            >
+            <ImageView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/apollo3"/>
+            <ImageView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/apollo4"/>
+            <ImageView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/apollo5"/>
+            <ImageView android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/apollo6"/>
+        </LinearLayout>
+
+</LinearLayout>

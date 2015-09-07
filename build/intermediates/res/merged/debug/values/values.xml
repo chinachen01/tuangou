@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="deal_sperator">#F0F0F0</color>
+    <color name="title_edit_color">#2CA399</color>
+    <color name="title_normal_color">#34BAAF</color>
+    <color name="title_pressed_color">#99DCD7</color>
+    <color name="txt_deep">#757575</color>
+    <color name="txt_deep2">#D9D9D9</color>
+    <color name="txt_little">#F0F0F0</color>
+    <!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">仿美团</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login2_btn">登录</string>
+    <string name="login_name">登录团美</string>
+    <string name="msg_help_txt">登录遇到问题?</string>
+    <string name="msg_password1_txt">请输入密码</string>
+    <string name="msg_password_btx">密码</string>
+    <string name="msg_username1_txt">请输入账号</string>
+    <string name="msg_username_txt">账户</string>
+    <!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="more_click_textview">
+	    <item name="android:textSize">16sp</item>
+	    <item name="android:paddingLeft">20dp</item>
+	    <item name="android:paddingBottom">20dp</item>
+	    <item name="android:paddingTop">20dp</item>
+	    <item name="android:textColor">@color/txt_deep</item>
+	    <item name="android:background">@drawable/selector_more_click</item>
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:clickable">true</item>
+	    <item name="android:drawablePadding">10dp</item>
+	</style>
+    <style name="poi_spinner">
+        <item name="android:background">@drawable/selector_spinner_back</item>
+   <!--      <item name="android:textColor">@drawable/selector_spinner_text</item> -->
+    </style>
+    <style name="radiobtn_warpcontent">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">5dp</item>
+    </style>
+    <style name="user_click_textview">
+	    <item name="android:textSize">14sp</item>
+	    <item name="android:paddingLeft">20dp</item>
+	    <item name="android:paddingBottom">20dp</item>
+	    <item name="android:paddingTop">20dp</item>
+	    <item name="android:textColor">@color/txt_deep</item>
+	    <item name="android:background">@drawable/selector_user_click</item>
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:clickable">true</item>
+	    <item name="android:drawablePadding">10dp</item>
+	</style>
+</resources>

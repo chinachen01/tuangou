@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#F0F0F0" >
+
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#66CCCC"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/serch_back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@drawable/ic_action_back" />
+
+        <ImageView
+            android:id="@+id/serch_home_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/serch_back_image"
+            android:clickable="true"
+            android:src="@drawable/ic_action_home" />
+
+        <TextView
+            android:id="@+id/serch_serch_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="搜索"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <AutoCompleteTextView
+            android:id="@+id/serch_context_auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/serch_serch_txt"
+            android:layout_toRightOf="@id/serch_home_image"
+            android:background="@drawable/shape_title_edit"
+            android:paddingLeft="30dp"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/serch_serch_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/serch_home_image"
+            android:clickable="true"
+            android:src="@drawable/ic_action_search" />
+
+        <ImageView
+            android:id="@+id/serch_clear_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/serch_serch_txt"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/clear_select"
+            android:visibility="invisible" />
+    </RelativeLayout>
+    <ListView android:layout_width="match_parent"
+        android:layout_height="match_parent"></ListView>
+
+</LinearLayout>

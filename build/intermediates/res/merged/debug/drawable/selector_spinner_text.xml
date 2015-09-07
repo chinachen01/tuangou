@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true" android:drawable="@color/title_normal_color"></item>
+	<item android:color="@color/txt_deep"></item>
+</selector>
+<!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/drawable/selector_spinner_text.xml -->

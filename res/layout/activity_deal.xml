@@ -1,0 +1,212 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:scrollbars="horizontal"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/title_normal_color"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/title_city_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_title_color"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_arrow_white_down"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="成都-武侯区"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+               
+                <ImageView
+                    android:id="@+id/title_map"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_action_map" />
+                 <EditText
+                    android:id="@+id/titile_edit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_toLeftOf="@id/title_map"
+                    android:background="@drawable/shape_title_edit"
+                    android:clickable="true"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="请输入商家,分类或商圈"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textColorHint="#53C4B9"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_action_search" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/viewpager_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.scxh.meituan.deal.MyViewPager
+                android:id="@+id/deal_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/view_pager_imag1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_radio_btn_on" />
+
+                <ImageView
+                    android:id="@+id/view_pager_imag2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_radio_btn_off" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F0F0F0" />
+
+        <ImageView
+            android:id="@+id/deal_spec1_imag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:src="@drawable/ic_deal_spec1" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F0F0" />
+
+        <com.scxh.meituan.deal.MyGridView
+            android:id="@+id/deal_spec_gridview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:paddingBottom="20dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="20dp"
+            android:text="猜你喜欢"
+            android:textColor="#757575"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F0F0" />
+
+        <com.scxh.meituan.deal.MyListView
+            android:id="@+id/deal_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/txt_deep2"
+            android:dividerHeight="1dp" >
+        </com.scxh.meituan.deal.MyListView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_text_view_press"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="查看全部团购"
+            android:textColor="@color/title_normal_color"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#F0F0F0" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_text_view_press"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="25dp"
+            android:text="愿意让我们更了解你吗\n让美团的推荐更符合你的胃口"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="18sp" />
+        
+        <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:background="@drawable/selector_login_press_btn"
+            android:textColor="@android:color/white"
+            android:text="我的美团DNA"
+            android:gravity="center"/>
+           <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@android:color/white" />
+    </LinearLayout>
+
+</ScrollView>

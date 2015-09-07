@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_selected="true" android:drawable="@drawable/abc_spinner_ab_disabled_holo_light"></item>
+    <item android:state_checked="true" android:drawable="@drawable/abc_spinner_ab_disabled_holo_light"></item>
+    <item android:state_pressed="true" android:drawable="@drawable/abc_spinner_ab_disabled_holo_light"></item>
+	<item android:drawable="@drawable/abc_spinner_ab_default_holo_light"></item>
+</selector>
+<!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/drawable/selector_spinner_back.xml -->

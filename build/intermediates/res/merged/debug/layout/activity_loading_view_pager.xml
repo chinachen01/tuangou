@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/loadign_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RadioGroup
+        android:id="@+id/loadingpager_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/loadingpager_radiobtn1"
+            style="@style/radiobtn_warpcontent"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/selector_loadingpager_radiobtn"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/loadingpager_radiobtn2"
+            style="@style/radiobtn_warpcontent"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/selector_loadingpager_radiobtn"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/loadingpager_radiobtn3"
+            style="@style/radiobtn_warpcontent"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/selector_loadingpager_radiobtn"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/loadingpager_radiobtn4"
+            style="@style/radiobtn_warpcontent"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/selector_loadingpager_radiobtn"
+            android:button="@null" />
+    </RadioGroup>
+
+</RelativeLayout><!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/layout/activity_loading_view_pager.xml -->

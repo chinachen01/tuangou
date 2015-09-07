@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" >
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAEAEA" >
+
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:background="#e4e3de"
+                android:choiceMode="singleChoice" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="350dp"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#EAEAEA" >
+
+            <ListView
+                android:id="@+id/subListView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="#EAEAEA" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/layout/item_poi_popup_window.xml -->

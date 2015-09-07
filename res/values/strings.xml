@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">仿美团</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="login_name">登录团美</string>
+    <string name="msg_username_txt">账户</string>
+    <string name="msg_username1_txt">请输入账号</string>
+    <string name="msg_password_btx">密码</string>
+    <string name="msg_password1_txt">请输入密码</string>
+    <string name="msg_help_txt">登录遇到问题?</string>
+    <string name="login2_btn">登录</string>
+</resources>

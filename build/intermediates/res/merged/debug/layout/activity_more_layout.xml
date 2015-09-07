@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="更多"
+                android:textColor="@color/txt_deep"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="#EAEAEA"
+                android:clickable="true"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:text="精品应用"
+                android:textColor="@color/txt_deep"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F0F0F0"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="设置"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/title_normal_color" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="设置" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/more_click_textview"
+                        android:text="非Wifi下使用省流量模式" />
+
+                    <ToggleButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/selector_wifi_change"
+                        android:checked="false"
+                        android:textOff=""
+                        android:textOn="" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="分享设置" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="邀请好友使用美团" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/more_click_textview"
+                        android:layout_weight="1"
+                        android:text="字号大小" />
+
+                    <TextView
+                        style="@style/more_click_textview"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="15dp"
+                        android:text="中字号(默认)" />
+                </LinearLayout>
+                 <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/more_click_textview"
+                        android:layout_weight="1"
+                        android:text="清空缓存" />
+
+                    <TextView
+                        style="@style/more_click_textview"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingRight="15dp"
+                        android:text="1024K" />
+                </LinearLayout>
+ <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#F0F0F0"
+                    android:orientation="vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingTop="10dp"
+                        android:text="其他"
+                        android:textSize="18sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@color/title_normal_color" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="扫一扫" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="意见反馈" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="意见反馈" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="支付帮助" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="检查更新" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="关于美团" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="加入我们" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+                <TextView
+                    style="@style/more_click_textview"
+                    android:text="诊断网络" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/txt_deep2" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout><!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/layout/activity_more_layout.xml -->

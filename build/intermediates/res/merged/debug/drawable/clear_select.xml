@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/ic_clear_search_disabled_holo_light" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/ic_clear_search_holo_light"></item>
+
+</selector>
+<!-- From: file:/D:/WorkSpace/StudioProject/MyApplication/meituan/res/drawable/clear_select.xml -->
